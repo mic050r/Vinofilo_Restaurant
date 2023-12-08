@@ -1,0 +1,149 @@
+/* COMMON */
+body {
+  /* #뒤에 똑같은 숫자 6개면 3개로 줄일 수 있음 */
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: "Nanum Gothic", sans-serif;
+}
+img {
+  /* img를 글자 취급하지 x 상자 요소로 사용하겠다. */
+  display: block;
+}
+a {
+  /* 밑줄을 사용하지 x */
+  text-decoration: none;
+}
+.inner {
+  /* 가운데 정렬 */
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+.btn {
+  width: 130px;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  transition: 0.4s;
+}
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+.btn.btn--reverse {
+  background-color: #333;
+  color: #fff;
+}
+.btn.btn--reverse:hover {
+  /* 투명한색 */
+  background-color: transparent;
+  color: #333;
+}
+.btn.btn--red {
+  color: #b5302f;
+  border-color: #b5302f;
+}
+.btn.btn--red:hover {
+  color: #fff;
+  background-color: #b5302f;
+}
+.btn.btn--gold {
+  color: #d9aa8a;
+  border-color: #d9aa8a;
+}
+.btn.btn--gold:hover {
+  color: #fff;
+  background-color: #d9aa8a;
+}
+.btn.btn--white {
+  color: #fff;
+  border-color: #fff;
+}
+.btn.btn--white:hover {
+  color: #333;
+  background-color: #fff;
+}
+
+/*HEADER*/
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  background-color: #f6f5f0;
+  border-bottom: 1px solid #c8c8c8;
+}
+header > .inner {
+  height: 120px;
+}
+header .logo {
+  height: 75px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+header .sub-menu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: flex;
+}
+header .sub-menu ul.menu {
+  list-style-type: none; /* 목록 기호 제거 */
+  display: inline-block; /* 항목을 가로로 정렬 */
+  margin-right: 10px; /* 각 항목 간 간격 조절 */
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+header .sub-menu ul.menu li {
+  position: relative;
+}
+header .sub-menu ul.menu li::before {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header .sub-menu ul.menu li:first-child::before {
+  display: none;
+}
+header .sub-menu ul.menu li a {
+  padding: 11px 16px;
+  display: block;
+  font-size: 13px;
+  color: #656565;
+}
+header .sub-menu ul.menu li a:hover {
+  color: #000;
+}
+header .sub-menu .search {
+  position: relative;
+  height: 34px;
+}
+header .sub-menu .search input:focus {
+  width: 190px;
+  border-color: #669900;
+}
+header .main-menu {
+  position: absolute;
+  list-style-type: none; /* 목록 기호 제거 */
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+}
