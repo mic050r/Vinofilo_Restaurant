@@ -1,0 +1,55 @@
+/* 예제 스타일링 */
+#promotion {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+#about {
+  background-color: #e0e0e0;
+  padding: 20px;
+}
+
+#menu {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+#events {
+  background-color: #e0e0e0;
+  padding: 20px;
+}
+
+#reservation {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+#reviews {
+  background-color: #e0e0e0;
+  padding: 20px;
+}
+
+#contact {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+#map {
+  background-color: #e0e0e0;
+  padding: 20px;
+}
+
+#blog {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
